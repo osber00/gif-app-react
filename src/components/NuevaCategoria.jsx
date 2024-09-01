@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from 'prop-types'
 
-const NuevaCategoria = ({ onGuardarCategoria }) => {
+export const NuevaCategoria = ({ onGuardarCategoria }) => {
   const [inputValue, setInputValue] = useState("");
 
   const onSubmit = (e) => {
@@ -27,5 +27,3 @@ const NuevaCategoria = ({ onGuardarCategoria }) => {
 NuevaCategoria.propTypes = {
   onGuardarCategoria: PropTypes.func.isRequired
 }
-
-export default NuevaCategoria;

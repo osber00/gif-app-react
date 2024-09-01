@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {NuevaCategoria, GridGif} from './components'
 
 
-const GitApp = () => {
+export const GitApp = () => {
   const [categorias, setCategorias] = useState(['One punch']);
 
   const onGuardarCategoria = (nuevaCategoria) => {
@@ -21,6 +21,4 @@ const GitApp = () => {
       </ul>
     </>
   );
-};
-
-export default GitApp;
+}

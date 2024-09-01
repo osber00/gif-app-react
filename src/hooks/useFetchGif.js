@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { busquedaAPI } from '../helpers/BusquedaAPI';
+import {useState, useEffect} from 'react'
+import {busquedaAPI} from '../helpers/busquedaAPI'
 
-const useFetchGif = (categoria) => {
+export const useFetchGif = (categoria) => {
   const [gifs, setGifs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -19,6 +19,4 @@ const useFetchGif = (categoria) => {
     gifs,
     isLoading,
   };
-};
-
-export default useFetchGif;
+}

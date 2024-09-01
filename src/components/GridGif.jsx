@@ -1,8 +1,8 @@
-import useFetchGif from "../hooks/useFetchGif";
-import GifItem from "./GifItem";
 import PropTypes from 'prop-types'
+import { GifItem } from "./GifItem";
+import {useFetchGif} from '../hooks/useFetchGif'
 
-const GridGif = ({ categoria }) => {
+export const GridGif = ({categoria}) => {
   const { gifs, isLoading } = useFetchGif(categoria);
 
   return (
@@ -16,10 +16,8 @@ const GridGif = ({ categoria }) => {
       </div>
     </div>
   );
-};
+}
 
 GridGif.propTypes = {
   categoria : PropTypes.string.isRequired
 }
-
-export default GridGif;
