@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test del componente <GifItem> Match con el Snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Naturo"
+      src="https://hello/naruto.jpg"
+    />
+    <p>
+      Naturo
+    </p>
+  </div>
+</div>
+`;

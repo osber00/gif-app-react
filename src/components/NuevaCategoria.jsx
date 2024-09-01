@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types'
 
 const NuevaCategoria = ({ onGuardarCategoria }) => {
   const [inputValue, setInputValue] = useState("");
@@ -22,5 +23,9 @@ const NuevaCategoria = ({ onGuardarCategoria }) => {
     </form>
   );
 };
+
+NuevaCategoria.propTypes = {
+  onGuardarCategoria: PropTypes.func.isRequired
+}
 
 export default NuevaCategoria;
